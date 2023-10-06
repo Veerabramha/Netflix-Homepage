@@ -1,0 +1,1213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+/*----Netflix Fonts----*/
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+.netflix-sans-font-loaded {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+/*----Ended----*/
+
+
+
+.main-bg-container{
+    background-image: url('https://res.cloudinary.com/db81wfhg9/image/upload/v1696321170/netflix_logo_bdye46.jpg'); 
+    background-size: 100%;
+    height: 100vh;
+    padding: 16px;
+}
+
+
+.netflix-logo{
+    height: 55px;
+    width: 160px;
+    margin-left: 25px;
+}
+
+.select-container{
+    width: 120px;
+    position: relative;
+    display: inline-block;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lang-img{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.select-container::after{
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -1px;
+    margin-right: 6px;
+    border-top: 5px solid #ffffff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    pointer-events: none;
+}
+
+.select-container select:focus{
+    outline: 2px solid;
+    outline-color: rgb(255, 255, 255);
+    border: 2px solid #a7a7a7;
+}
+
+.select-container select{
+    font-family: "Roboto";
+    font-size: 17px;
+}
+
+select{
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    line-height: 15px;
+    text-align: center;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.signIn-btn{
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: bold;
+    background-color: red;
+    color: #ffffff;
+    height: 32px;
+    width: 78px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-right: 38px;
+    margin-top: 10px;
+}
+
+.signIn-btn:focus{
+    outline: none;
+    border: none;
+}
+
+.home-center-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sub-text-container{
+    padding-top: 180px;
+
+}
+
+.indian-hits-text{
+    font-family:"Netflix Sans";
+    font-size: 48px;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 900;
+    color: #ffffff;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.indian-hits-sub-text1{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-display: optional;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    text-align: center;
+}
+
+.indian-hits-sub-text2{
+    font-family:"Netflix Sans";
+    font-size: 20px;
+    font-display: optional;
+    line-height: 30px;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    text-align: center;
+}
+
+input{
+    height: 55px;
+    width: 380px;
+    background-color: rgb(37, 39, 39);opacity: 0.8;
+    outline: none;
+    border: #7a7a7a solid 1px;
+    border-radius: 3px;
+}
+input::placeholder{
+    color: #f0f0f0;
+    font-family:"Netflix Sans";
+    font-size: 16px;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    padding-left: 10px;
+}
+
+.get-started-btn{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    background-color: red;
+    color: #ffffff;
+    height: 55px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-right: 38px;
+}
+
+.hr-line-div{
+    height: 8px;
+    width: 100%;
+    background-color: #202020;
+}
+
+.enjoytv-bg-container{
+    background-color: #000000; 
+    background-size: 100%;
+    height: 80vh;
+    padding: 5px;
+}
+
+.tv-text-container{
+    padding-top: 100px;
+    padding-right: 20px;
+}
+
+.tv-head-text{
+    font-family:"Netflix Sans";
+    font-size: 48px;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 900;
+    color: #ffffff;
+    text-align: left;
+    width: 400px;
+}   
+
+.tv-subtext{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-display: optional;
+    font-weight: 400;
+    line-height: 30px;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: left;
+    width: 500px;
+}
+
+.tv-container{
+    max-width: 550px;
+}
+
+.tv-image{
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+/*---watch TV ---*/
+
+.default-ltr-cache-v2xv94 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    padding: 3.5rem 0;
+}
+
+.default-ltr-cache-q7jeu {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+
+.default-ltr-cache-tmevzf {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.default-ltr-cache-1qms9jn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.default-ltr-cache-7cljuy {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+
+
+.default-ltr-cache-m5f3qu {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*---watch TV ended---*/
+
+
+
+
+/*---Download Shows---*/
+
+.default-ltr-cache-pv2edp {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.default-ltr-cache-ogx8b3 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.default-ltr-cache-1t1z3a4 {
+    height: 87px;
+}
+
+
+.default-ltr-cache-1cn8kex {
+    margin: 0 1rem 0 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.default-ltr-cache-tcf860 {
+    text-align: left;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+}
+
+
+.default-ltr-cache-162uqtg {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+}
+
+.default-ltr-cache-44ib4m {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0071eb;
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+}
+
+.default-ltr-cache-xfttou {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+.default-ltr-cache-1q4up1i {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.download-text-container{
+    padding-top: 50px;
+}
+
+
+.download-flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/*---Ended---*/
+
+
+/*---watch everywhere ---*/
+
+.default-ltr-cache-v2xv94 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    padding: 3.5rem 0;
+}
+
+.default-ltr-cache-q7jeu0 {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+
+.default-ltr-cache-1asgq30 {
+    margin: 1.5rem 0 0;
+}
+
+.default-ltr-cache-1qms9jn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.default-ltr-cache-7cljuy {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+
+.default-ltr-cache-bjn8wh {
+    position: relative;
+}
+
+.default-ltr-cache-1d3w5wq {
+    width: 85%;
+}
+
+.default-ltr-cache-1626rqb {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.default-ltr-cache-1yz1b0z {
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+.watch-container{
+    max-width: 550px;
+}
+
+.watch-text-container{
+    padding-top: 100px;
+}
+
+.watch-head-text{
+    font-family:"Netflix Sans";
+    font-size: 48px;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 900;
+    color: #ffffff;
+    text-align: left;
+    width: 550px;
+} 
+
+.watch-subtext{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-display: optional;
+    font-weight: 400;
+    line-height: 30px;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: left;
+    width: 500px;
+}
+
+/*---Ended---*/
+
+
+
+/*---children section---*/
+
+.child-text-container{
+    padding-top: 70px;
+}
+
+.child-head-text{
+    font-family:"Netflix Sans";
+    font-size: 48px;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 900;
+    color: #ffffff;
+    text-align: left;
+    width: 450px;
+} 
+
+.child-subtext{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-display: optional;
+    font-weight: 400;
+    line-height: 30px;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: left;
+    width: 500px;
+}
+
+
+
+
+/*---frequently section---*/
+
+.freq-bg-container{
+    background-color: #000000; 
+    background-size: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.freq-head-text{
+    font-family:"Netflix Sans";
+    font-size: 48px;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+} 
+
+.freq-subtext{
+    font-family:"Netflix Sans";
+    font-size: 24px;
+    font-display: optional;
+    font-weight: 400;
+    line-height: 30px;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+
+.default-ltr-cache-1asgq30 {
+    margin: 1.5rem 0 0;
+}
+
+.default-ltr-cache-1fv7bu {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: inherit;
+}
+
+.default-ltr-cache-1vunuwp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+.default-ltr-cache-dfy0gt {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 0.0625rem;
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.default-ltr-cache-dfy0gt:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+}
+
+.default-ltr-cache-dfy0gt>button {
+    padding: 1.5rem;
+}
+
+.default-ltr-cache-dfy0gt>button:focus {
+    outline: none;
+    outline: rgb(255, 255, 255) solid 0.125rem;
+    outline-offset: 0.125rem;
+}
+
+.default-ltr-cache-dfy0gt>button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.default-ltr-cache-17u9mfw {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    border-radius: 0;
+    border: 0;
+    box-sizing: content-box;
+    color: inherit;
+    cursor: default;
+    display: inline;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+}
+
+.default-ltr-cache-17u9mfw[aria-disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.default-ltr-cache-17u9mfw:focus {
+    outline: none;
+    outline: #a9a9a9 auto 5px;
+    outline: Highlight auto 5px;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.default-ltr-cache-17u9mfw:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.default-ltr-cache-1cuyn15 {
+    width: 2.25rem;
+    height: 2.25rem;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.default-ltr-cache-1lofnqj {
+    overflow: hidden;
+    max-height: 0;
+    visibility: collapse;
+    max-height: 0;
+    padding: 0 1.5rem;
+    -webkit-transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+    text-align: left;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+}
+
+.default-ltr-cache-1lofnqj[data-is-open='true'] {
+    max-height: 75rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.default-ltr-cache-1lofnqj a {
+    color: rgb(255, 255, 255);
+    border-radius: 0.125rem;
+}
+
+.default-ltr-cache-1lofnqj a:focus {
+    outline: none;
+    outline: rgb(255, 255, 255) solid 0.125rem;
+    outline-offset: 0.125rem;
+}
+
+.default-ltr-cache-1lofnqj a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.default-ltr-cache-1ypj6h8 {
+    margin-top: 2.85rem;
+}
+
+.default-ltr-cache-inkrn {
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 61.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    content: '1';
+}
+
+.default-ltr-cache-1jbflut {
+    text-align: left;
+    position: relative;
+    margin: 1rem auto 0;
+    width: 100%;
+    max-width: 36.625rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.default-ltr-cache-1jbflut>div {
+    width: 100%;
+}
+
+.default-ltr-cache-1jbflut button {
+    margin-top: 1rem;
+}
+
+.default-ltr-cache-1jbflut[data-issplitform='false'] {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+}
+
+.default-ltr-cache-1jbflut[data-issplitform='false']>div {
+    width: auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.default-ltr-cache-1jbflut[data-issplitform='false'] button {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: 0;
+    margin-left: 0.5rem;
+}
+
+.default-ltr-cache-1jbflut[data-issplitform='false'][data-hasmessage='true'] {
+    margin-bottom: -1.625rem;
+}
+
+.default-ltr-cache-hyhv56 {
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ea3diy33~.default-ltr-cache-hyhv56 {
+    display: inline-block;
+    padding-left: 0.25rem;
+}
+
+.default-ltr-cache-1goff39 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: black;
+    fill: black;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 400;
+    gap: 2px;
+    letter-spacing: normal;
+    line-height: 100%;
+    padding: 2px;
+    position: relative;
+    text-align: left;
+    z-index: 0;
+}
+
+.default-ltr-cache-1goff39>input,
+.default-ltr-cache-1goff39>select {
+    -webkit-animation: animation-14hycbg;
+    animation: animation-14hycbg;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0 solid transparent;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    min-width: 15px;
+    min-height: 15px;
+    padding: 0;
+    text-align: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+
+.default-ltr-cache-1goff39>input:-webkit-autofill,
+.default-ltr-cache-1goff39>select:-webkit-autofill {
+    -webkit-animation: animation-8kyet8;
+    animation: animation-8kyet8;
+    background-image: none !important;
+    transition-property: background-color, color;
+    transition-delay: 86400s;
+}
+
+.default-ltr-cache-1goff39>input:autofill,
+.default-ltr-cache-1goff39>select:autofill {
+    -webkit-animation: animation-8kyet8;
+    animation: animation-8kyet8;
+    background-image: none !important;
+    transition-property: background-color, color;
+    transition-delay: 86400s;
+}
+
+.default-ltr-cache-1goff39>input.edge-autofilled,
+.default-ltr-cache-1goff39>select.edge-autofilled,
+.default-ltr-cache-1goff39>input[data-com-onepassword-filled],
+.default-ltr-cache-1goff39>select[data-com-onepassword-filled],
+.default-ltr-cache-1goff39>input[data-dashlane-autofilled],
+.default-ltr-cache-1goff39>select[data-dashlane-autofilled] {
+    -webkit-animation: animation-8kyet8;
+    animation: animation-8kyet8;
+    background-image: none !important;
+    transition-property: background-color, color;
+    transition-delay: 86400s;
+}
+
+.default-ltr-cache-1goff39>input[aria-disabled],
+.default-ltr-cache-1goff39>select[aria-disabled] {
+    cursor: not-allowed;
+    caret-color: transparent;
+}
+
+.default-ltr-cache-1goff39>input:focus,
+.default-ltr-cache-1goff39>select:focus,
+.default-ltr-cache-1goff39>input:focus-visible,
+.default-ltr-cache-1goff39>select:focus-visible {
+    outline: 0;
+}
+
+.default-ltr-cache-1goff39>input:-webkit-autofill-strong-password::-webkit-textfield-decoration-container,
+.default-ltr-cache-1goff39>select:-webkit-autofill-strong-password::-webkit-textfield-decoration-container,
+.default-ltr-cache-1goff39>input:-webkit-autofill-strong-password-viewable::-webkit-textfield-decoration-container,
+.default-ltr-cache-1goff39>select:-webkit-autofill-strong-password-viewable::-webkit-textfield-decoration-container {
+    -webkit-filter: brightness(0%) contrast(0%);
+    filter: brightness(0%) contrast(0%);
+}
+
+.default-ltr-cache-emv211 {
+    color: transparent;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[aria-disabled]~.default-ltr-cache-emv211,
+select[aria-disabled]~.default-ltr-cache-emv211 {
+    opacity: 0.5;
+}
+
+input[data-autofill]~.default-ltr-cache-emv211,
+select[data-autofill]~.default-ltr-cache-emv211 {
+    background: cornsilk;
+}
+
+input:focus~.default-ltr-cache-emv211,
+select:focus~.default-ltr-cache-emv211 {
+    outline: #a9a9a9 auto 5px;
+    outline: Highlight auto 5px;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+input:focus:not(:focus-visible)~.default-ltr-cache-emv211,
+select:focus:not(:focus-visible)~.default-ltr-cache-emv211 {
+    outline: none;
+}
+
+.default-ltr-cache-17uj5h {
+    display: inline-block;
+    height: 1.5rem;
+}
+
+.default-ltr-cache-17uj5h>svg {
+    width: 1.5rem;
+    height: inherit;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+}
+
+.default-ltr-cache-a4hmbt {
+    position: absolute;
+}
+
+.default-ltr-cache-1qms9jn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.default-ltr-cache-vgp0nn {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+
+.default-ltr-cache-vgp0nn {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+
+.default-ltr-cache-1yz1b0z {
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+/*---frequently section Ended---*/
+
+
+
+
+/*---footer section---*/
+
+.footer-bg-container{
+    background-color: #000000; 
+    background-size: cover;
+    height: 65vh;
+    padding: 5px;
+}
+
+.footer-container{
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.footer-head-text{
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 500;
+    color: #b1adad;
+    font-size: 16px;
+    padding-left: 39px;
+}
+
+.footer-head-text a{
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 500;
+    color: #b1adad;
+    font-size: 16px;
+    text-decoration: underline;
+
+}
+
+.footer-head-text a:hover{
+    color: #b1adad;
+}
+
+.footer-text{
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 500;
+    color: #b1adad;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.footer-text a{
+    font-family:"Netflix Sans";
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+    font-weight: 500;
+    color: #b1adad;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.footer-text a:hover{
+    color: #b1adad;
+}
+
+.list-flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ul-container{
+    padding-top: 10px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    flex: 0 0 23%;
+}
+
+.footer-lang-netflix-continer{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.netflix-text{
+    padding-top: 20px;
+}
