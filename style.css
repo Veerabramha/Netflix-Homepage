@@ -138,13 +138,19 @@ input{
     outline: none;
     border: #7a7a7a solid 1px;
     border-radius: 3px;
+    color: #ffffff;
+    font-family: "Netflix Sans";
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 20px;
 }
+
 input::placeholder{
     color: #f0f0f0;
     font-family:"Netflix Sans";
     font-size: 16px;
     font-weight: 400;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .get-started-btn{
